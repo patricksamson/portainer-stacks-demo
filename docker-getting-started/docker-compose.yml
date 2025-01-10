@@ -2,4 +2,7 @@ services:
   docker-getting-started:
     image: docker/getting-started
     ports:
-      - "9876:80"
+      - target: 80
+        published: 9876
+        protocol: tcp
+        mode: host
