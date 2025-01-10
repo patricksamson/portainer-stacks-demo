@@ -2,4 +2,7 @@ services:
   nginx-hello:
     image: nginxdemos/hello
     ports:
-      - "8000:80"
+      - target: 80
+        published: 8080
+        protocol: tcp
+        mode: host
