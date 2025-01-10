@@ -1,0 +1,5 @@
+services:
+  docker-getting-started:
+    image: docker/getting-started
+    ports:
+      - "9000:80"
